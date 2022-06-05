@@ -10,6 +10,6 @@ kotlin -cp "ktor.jar;." ServidorKt
 4-Acesse a seguinte URL no seu navegador: http://localhost:7654.
 
 Integrantes do projeto:
-github.com/AlexandreRodolfo
-github.com/DjairMaynart
-github.com/humbertomatheuz
+https://github.com/AlexandreRodolfo
+https://github.com/DjairMaynart
+https://github.com/humbertomatheuz
