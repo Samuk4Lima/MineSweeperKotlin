@@ -1,7 +1,0 @@
-<ol>Difícil
-</ol><ol>Médio
-</ol><ol>Fácil
-<li>[18:32:26] ll (Fácil): %%00:03%%</li>
-<li>[18:29:41] ooo (Fácil): %%00:06%%</li>
-<li>[18:30:03] lç (Fácil): %%00:08%%</li>
-</ol>
