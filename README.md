@@ -8,3 +8,8 @@ kotlinc-js FrontEnd.kt -output static/FrontEnd.js
 kotlin -cp "ktor.jar;." ServidorKt
 
 4-Acesse a seguinte URL no seu navegador: http://localhost:7654.
+
+Integrantes do projeto:
+github.com/AlexandreRodolfo
+github.com/DjairMaynart
+github.com/humbertomatheuz
