@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    color: white;
+    font-family: poppinsregular;
+    margin: 0 auto;
+    padding: 15px;
+    justify-content: center;
+}
+
+#logo {
+    width: 360px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.textIcon {
+    font-size: 24px;
+}
+
+.inputDiv {
+    display: grid;
+    margin-left: 50px;
+    max-height: 30px;
+}
+
+.count {
+    display: flex;
+    justify-content: right;
+}
+
+.screen {
+    display: flex;
+    padding-top: 50px;
+    justify-content: right;
+}
+
+#tabuleiro {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.bttn {
+    border: 2px solid rgb(132, 14, 201);
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+    margin-bottom: 0px;
+    min-width: 150px;
+}
+
+.bttn:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+    transition: 0.3ms all;
+}
+
+.generic_cell {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(132, 14, 201);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    color: white;
+}
+
+.number_cell {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(244, 247, 119);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+.flag_cell {
+    border: 2px solid rgb(132, 14, 201);
+    background-image: url(images/flag32.png);
+    background-color: rgb(132, 14, 201);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    color: white;
+}
+
+.bomb_cell {
+    border: 2px solid rgb(255, 255, 255);
+    background-image: url(images/explosion32.png);
+    background-color: rgb(244, 247, 119);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+.bttn2 {
+    height: 40px;
+    min-width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(132, 14, 201);
+}
+
+.bttn3 {
+    border: 2px solid rgb(132, 14, 201);
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+a {
+    color: white;
+    font-size: 18px;
+}
+
+.logo {
+    left: 10px;
+}
+
+.popup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popupDiv {
+    visibility: hidden;
+    border: 2px solid rgb(132, 14, 201);
+    width: 200px;
+    background-image: linear-gradient(70deg, #3ca8e6 0, #3794e9 25%, #8e56f3 50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.popup .popupDiv::after {
+    position: absolute;
+    top: 100%;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.popup .show {
+    visibility: visible;
+}
+
+input {
+    border: 2px solid rgb(132, 14, 201);
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(34, 34, 34) !important;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+    margin-bottom: 0px;
+    min-width: 150px;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="styleGame.css" />
+  <link rel="stylesheet" href="fonts.css" />
+</head>
+
+<body oncontextmenu="return false;">
+  <center>
+    <div class="screen">
+      <div style="display: grid;">
+        <a href='http://localhost:7654'><img id="logo" src="./images/logo.png" alt="logo" /></a>
+        <div class="inputDiv">
+          <input type="text" id="username" size="15" maxlength="15" placeholder="Digite seu nome" autocomplete="off">
+          <button class="bttn" onclick="togglePopup()">Gerar novo Jogo</button>
+          <div class="popup">
+            <div class="popupDiv" id="myPopup" onclick="togglePopup()">
+              <button class="bttn3" onclick="FrontEnd.setDificuldade(0);FrontEnd.criaProbe();">Fácil</button>
+              <button class="bttn3" onclick="FrontEnd.setDificuldade(1);FrontEnd.criaProbe();">Médio</button>
+              <button class="bttn3" onclick="FrontEnd.setDificuldade(2);FrontEnd.criaProbe();">Difícil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inputDiv">
+        <div class="count">
+          <img src="./images/time32.png" alt="logo" class="icon" />
+          <div id="cronometro">00:00</div>
+          <img src="./images/flag32.png" alt="logo" class="icon" />
+          <div id="bandeira">000</div>
+        </div>
+        <div style="margin-top: 20px;">
+          <center>
+            <div id="tabuleiro">Seja Bem vindo, gere seu tabuleiro e divirta-se</div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </center>
+  <div id="problematic"></div>
+  <script src="https://cdn.jsdelivr.net/npm/kotlin@1.5.31/kotlin.min.js"></script>
+  <script src="/FrontEnd.js"></script>
+  <script>
+    function msg() {
+      document.getElementById("problematic").children[0].remove()
+      var nome = document.getElementById("username").value
+      if (nome == "") { nome = " " }
+      var dificuldade = FrontEnd.getDificuldade()
+      var tempo = document.getElementById("cronometro").innerText
+      fetch("http://localhost:7654/score/" + nome + "/" + dificuldade + "/" + tempo.replace(":", "a"))
+    }
+    function togglePopup() {
+      var popup = document.getElementById("myPopup")
+      popup.classList.toggle("show")
+    }
+  </script>
+</body>
+
+</html>

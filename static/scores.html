@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Scores</title>
+  <link rel="stylesheet" href="styleGame.css" />
+  <link rel="stylesheet" href="fonts.css" />
+  <script>
+    setInterval(function () {fetch('/gScores').then(r => r.text()).then(txt => document.getElementById("scoreList").innerHTML = txt)}, 100);
+    setInterval(function () {fetch('/gMessages').then(r => r.text()).then(txt => document.getElementById("messageList").innerHTML = txt)}, 100);          
+  </script>
+</head>
+<body>
+  <div style="display: grid;">
+    <div style="display: flex; max-height: 200px;">
+      <a href='http://localhost:7654'><img id="logo" src="./images/logo.png" alt="logo" /></a>
+      <h1 style="font-size: 100px; margin-top: 20px;color: red;">
+        SCORES
+      </h1>
+    </div>
+    <div style="display: inline-flex;">
+      <div id="scoreList">scores go here</div>
+      <div id="messageList" style="list-style-type:none;">messages go here</div>
+    </div>
+</body>
+</html>
