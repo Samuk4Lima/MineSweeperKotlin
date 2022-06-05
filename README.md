@@ -7,4 +7,4 @@ kotlinc-js FrontEnd.kt -output static/FrontEnd.js
 3-Execute este comando para subir o servidor ktor:
 kotlin -cp "ktor.jar;." ServidorKt
 
-4-Acesse a seguinte URL no seu nvaegador: http://localhost:7654.
+4-Acesse a seguinte URL no seu navegador: http://localhost:7654.
